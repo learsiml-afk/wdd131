@@ -3,76 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content= "WDD 131 - Dynamic Web Fundamentals - Israel Martinez - Landing Page">
-    <title>WDD 131 – Dynamic Web Fundamentals – Israel Martinez".</title>
-
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Israel Martinez - Landing Page">
+    <title>WDD 131 – Dynamic Web Fundamentals – Israel Martinez</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer=""></script>
-    
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <div class="course-header">
             <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         </div>
-        <nav>   
-            <a href="https://www.linkedin.com/in/israel-martinez-lopez/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/.">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/48?lang=eng&id=p17#p17">Scripture</a>
-            <a>Final Project</a> 
+        <nav>
+            <a href="https://www.linkedin.com/in/israel-martinez-lopez/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/48?lang=eng&id=p17#p17" target="_blank">Scripture</a>
+            <a href="project/index.html">Final Project</a>
         </nav>
     </header>
-
+ 
     <main>
         <h1>Israel Martinez</h1>
-        
+ 
         <div class="grid-container">
+ 
             <section class="card">
                 <h2 class="card-header">About Me</h2>
                 <div class="card-content">
                     <div class="about-top">
-                        <p> My name is Israel Martinez.I'm from Mexico, currently pursuing a
+                        <p>My name is Israel Martinez. I'm from Mexico, currently pursuing a
                             Bachelor's of Software Development. I want to eventually change my major to
                             Mechanical Engineering, and within 7 years, I am going to work for NASA.</p>
-
-                        <img src="images/profile.png" alt="Israel Martinez Profile" >
+                        <img src="images/profile.png" alt="Israel Martinez Profile">
                     </div>
-
-                    <div class="location-info"></div>
-                        <h3>Tijuana, Baja California, Mexico </h3>
-                        <hr>
-                        <div class="location-layout">
-                            <img src="images/tijuana_arch.jpg" alt="Arch city of Tijuana">
-                            <p>Tijuana is the most heavily populated city in the state of Baja California. It is
-                                 known in many places as the Mexican corner or the door to Mexico and to Latin
-                                 America...</p>
-                        </div>
+                    <h3>Tijuana, Baja California, Mexico</h3>
+                    <hr>
+                    <div class="location-layout">
+                        <img src="images/tijuana_arch.jpg" alt="Arch of Tijuana">
+                        <p>Tijuana is the most heavily populated city in the state of Baja California. It is
+                            known in many places as the Mexican corner or the door to Mexico and to Latin
+                            America...</p>
                     </div>
-                 </div>    
-    </section>
-
-    <section class="card">
+                </div>
+            </section>
+ 
+            <section class="card">
                 <h2 class="card-header">Web Dev Resources</h2>
                 <div class="card-content">
                     <ul class="resource-list">
                         <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
-                        <li><a href="https://smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a>
-                        </li>
+                        <li><a href="https://smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a></li>
                         <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS Tricks</a></li>
                         <li><a href="https://w3schools.com" target="_blank" rel="noopener">W3Schools</a></li>
                         <li><a href="https://udemy.com" target="_blank" rel="noopener">Udemy</a></li>
                     </ul>
                 </div>
             </section>
+ 
         </div>
     </main>
-    
-    <footer>
-        <p>©2026 🧑🏽‍🚀 Israel Martinez 🧑🏽‍🚀 Tijuana, Mexico </p>
-        <p id="lastModified">Last Modification: </p>
-    </footer>
+ 
+   <footer>
+    <p>©<span id="currentyear"></span> 🧑🏽‍🚀 Israel Martinez 🧑🏽‍🚀 Tijuana, Mexico</p>
+    <p id="lastModified">Last Modification: </p>
+</footer>
+ 
+</body>
 </html>
