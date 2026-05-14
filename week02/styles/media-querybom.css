@@ -23,6 +23,7 @@ main {
 	background-color: #ddd;
 	display: flex;
 	flex-direction: column;
+    min-width: 300px;
 }
 
 input,
@@ -56,4 +57,8 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+    background-color: #fff; 
+    margin-bottom: 0.5rem;   
+    padding: 0.5rem;        
+    border-radius: 4px;     
 }
