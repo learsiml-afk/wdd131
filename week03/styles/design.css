@@ -9,7 +9,7 @@ footer {
 	margin: 0 auto;
 }
 
-marquee {
+.banner {
 	padding: 1rem;
 	background-color: #eee;
 }
@@ -20,25 +20,30 @@ h1 {
 
 main {
 	display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-h2 {
-	color: navy;
-	text-align: center;
+main h2 {
+    grid-column: 1 / -1;
+    color:navy;
+    text-align: left;
 }
+
 
 article p {
 	text-align: justify;
 }
 
 .callout {
-	color: #777;
+	color: #fff;
 	background-color: #702963;
+    padding: 1rem;
+    grid-column: 1 / -1;
 }
 
 footer {
 	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: smaller;
-	text-align: right;
+	text-align: left;
 }
