@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A country page about Italy featuring geographic data, weather conditions, and wind chill information for this beautiful Southern European nation." />
+  <meta name="author" content="Israel" />
+  <title>Italy – WDD 131 Country Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/place.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Italy</h1>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="images/italy-wide.webp"
+          width="1200"
+          height="600"
+        />
+        <img
+          src="images/italy-small.webp"
+          alt="The Colosseum in Rome, Italy, under a bright blue sky"
+          width="600"
+          height="600"
+          loading="eager"
+        />
+      </picture>
+
+      <div class="card data-card">
+        <h2>Data</h2>
+        <dl>
+          <dt>Area:</dt>        <dd>301,340 sq km</dd>
+          <dt>Population:</dt>  <dd>60,317,000</dd>
+          <dt>Capital:</dt>     <dd>Rome</dd>
+          <dt>Languages:</dt>   <dd>Italian</dd>
+          <dt>Currency:</dt>    <dd>Euro (EUR)</dd>
+          <dt>Time Zone:</dt>   <dd>UTC+1 (CET)</dd>
+          <dt>Calling Code:</dt><dd>+39</dd>
+          <dt>Internet TLD:</dt><dd>.it</dd>
+        </dl>
+      </div>
+
+      <div class="card weather-card">
+        <h2>Weather <span class="weather-icon-wide" aria-hidden="true">⛅</span></h2>
+        <dl>
+          <dt>Temperature:</dt><dd>8 °C</dd>
+          <dt>Conditions:</dt> <dd>Partly Cloudy</dd>
+          <dt>Wind:</dt>       <dd>20 km/h</dd>
+          <dt>Wind Chill:</dt> <dd id="wind-chill-display">N/A</dd>
+        </dl>
+      </div>
+    </div>
+
+    <section class="data-section">
+      <h2>Data</h2>
+      <dl>
+        <dt>Area:</dt>        <dd>301,340 sq km</dd>
+        <dt>Population:</dt>  <dd>60,317,000</dd>
+        <dt>Capital:</dt>     <dd>Rome</dd>
+        <dt>Languages:</dt>   <dd>Italian</dd>
+        <dt>Currency:</dt>    <dd>Euro (EUR)</dd>
+        <dt>Time Zone:</dt>   <dd>UTC+1 (CET)</dd>
+        <dt>Calling Code:</dt><dd>+39</dd>
+        <dt>Internet TLD:</dt><dd>.it</dd>
+      </dl>
+    </section>
+
+    <section class="weather-section">
+      <h2>Weather</h2>
+      <div class="weather-icon-mobile" aria-hidden="true"></div>
+      <dl>
+        <dt>Temperature:</dt><dd>8 °C</dd>
+        <dt>Conditions:</dt> <dd>Partly Cloudy</dd>
+        <dt>Wind:</dt>       <dd>20 km/h</dd>
+        <dt>Wind Chill:</dt> <dd id="wind-chill-mobile">N/A</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;<span id="year"></span> 🇮🇹 Israel &nbsp;|&nbsp; Italy 🇮🇹</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="scripts/place.js" defer></script>
+</body>
+</html>
