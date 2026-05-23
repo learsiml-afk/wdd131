@@ -1,20 +1,19 @@
 
 :root {
-  --color-green:      #009246;   
-  --color-red:        #ce2b37;   
+  --color-green:      #009246;
+  --color-red:        #ce2b37;
   --color-white:      #ffffff;
   --color-light-bg:   #f7f4ef;
   --color-dark-text:  #1c1c1c;
-  --color-card-bg:    rgba(0, 80, 40, 0.90);
+  --color-card-bg:    rgba(0, 70, 35, 0.88);
   --color-card-head:  #007a38;
   --color-dt-muted:   rgba(255, 255, 255, 0.68);
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Lato', Arial, sans-serif;
 
-  --shadow-card:  0 6px 24px rgba(0, 0, 0, 0.28);
+  --shadow-card:  0 6px 24px rgba(0, 0, 0, 0.35);
   --radius:       8px;
-  --transition:   0.2s ease;
 }
 
 *, *::before, *::after {
@@ -53,15 +52,22 @@ main {
 .hero {
   position: relative;
   width: 100%;
-  line-height: 0;
+  overflow: hidden;
+  background-color: #2d4a38;  /* dark green fallback when image is missing */
+  min-height: 260px;
 }
 
-.hero picture,
+.hero picture {
+  display: block;
+  width: 100%;
+}
+
 .hero img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center;
 }
 
 .card {
@@ -134,9 +140,15 @@ footer {
 
 @media (min-width: 768px) {
 
+  /* Hide mobile stacked sections */
   .data-section,
   .weather-section {
     display: none;
+  }
+
+  .hero {
+    height: 540px;
+    min-height: 540px;
   }
 
   .hero img {
@@ -152,7 +164,7 @@ footer {
     padding: 0 1.25rem 1.25rem;
     color: var(--color-white);
     background-color: var(--color-card-bg);
-    transition: var(--transition);
+    z-index: 10;
   }
 
   .card h2 {
@@ -181,14 +193,14 @@ footer {
   }
 
   .data-card {
-    top: 4%;
-    left: 2%;
+    top: 20px;
+    left: 20px;
     width: 255px;
   }
 
   .weather-card {
-    bottom: 4%;
-    right: 2%;
+    bottom: 20px;
+    right: 20px;
     width: 235px;
   }
 }
