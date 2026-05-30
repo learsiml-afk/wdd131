@@ -1,0 +1,56 @@
+ 
+@media (min-width: 640px) {
+ 
+  .header-inner {
+    flex-wrap: nowrap;
+    padding: 0 1.75rem;
+    height: 60px;
+  }
+ 
+  .hamburger {
+    display: none;
+  }
+ 
+  nav {
+    display: flex !important;   
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+    gap: 0.25rem;
+    align-items: center;
+  }
+ 
+  nav a {
+    font-size: 1rem;
+    padding: 0.4rem 0.85rem;
+  }
+ 
+  main h1 {
+    font-size: 1.9rem;
+  }
+ 
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+ 
+  figure img {
+    height: 220px;
+  }
+}
+ 
+@media (min-width: 900px) {
+ 
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+ 
+  figure img {
+    height: 200px;
+  }
+ 
+  main {
+    padding: 2.5rem 2rem 4rem;
+  }
+}
