@@ -150,3 +150,84 @@ const temples = [
     imageUrl: "images/timpanogos.jpg"
   }
 ];
+
+function getDedicatedYear(t) {
+  return parseInt(t.dedicated.split(",")[0].trim(), 10);
+}
+ 
+function filterTemples(filter) {
+  switch (filter) {
+    case "old":   return temples.filter(t => getDedicatedYear(t) < 1900);
+    case "new":   return temples.filter(t => getDedicatedYear(t) > 2000);
+    case "large": return temples.filter(t => t.area > 90000);
+    case "small": return temples.filter(t => t.area < 10000);
+    default:      return temples; // home = all
+  }
+}
+
+
+function createTempleCard(temple) {
+  const figure = document.createElement("figure");
+ 
+  const img = document.createElement("img");
+  img.src = temple.imageUrl;
+  img.alt = `${temple.templeName} Temple`;
+  img.loading = "lazy";
+ 
+  const caption = document.createElement("figcaption");
+  caption.innerHTML = `
+    <h3>${temple.templeName}</h3>
+    <p><span class="label">Location:</span> ${temple.location}</p>
+    <p><span class="label">Dedicated:</span> ${temple.dedicated}</p>
+    <p><span class="label">Size:</span> ${temple.area.toLocaleString()} sq ft</p>
+  `;
+ 
+  figure.appendChild(img);
+  figure.appendChild(caption);
+  return figure;
+}
+
+function renderGallery(filter = "home") {
+  const gallery = document.getElementById("gallery");
+  const title   = document.getElementById("galleryTitle");
+ 
+  gallery.innerHTML = "";
+  filterTemples(filter).forEach(t => gallery.appendChild(createTempleCard(t)));
+ 
+  title.textContent = filter.charAt(0).toUpperCase() + filter.slice(1);
+ 
+  document.querySelectorAll("nav a").forEach(a => {
+    a.classList.toggle("active", a.dataset.filter === filter);
+  });
+}
+document.addEventListener("DOMContentLoaded", () => {
+  renderGallery("home");
+ 
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const mainNav      = document.getElementById("mainNav");
+ 
+  if (hamburgerBtn && mainNav) {
+    hamburgerBtn.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      hamburgerBtn.innerHTML = isOpen ? "&#10005;" : "&#9776;";
+      hamburgerBtn.setAttribute("aria-expanded", isOpen.toString());
+    });
+ 
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        renderGallery(link.dataset.filter);
+        mainNav.classList.remove("open");
+        hamburgerBtn.innerHTML = "&#9776;";
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+ 
+  // Footer
+  const yearSpan = document.getElementById("currentYear");
+  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+ 
+  const modifiedSpan = document.getElementById("lastModified");
+  if (modifiedSpan) modifiedSpan.textContent = document.lastModified;
+});
