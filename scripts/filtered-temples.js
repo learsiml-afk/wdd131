@@ -87,7 +87,7 @@ const temples = [
     templeName: "Red Cliffs Utah",
     location: "St. George, Utah, United States",
     dedicated: "2024, March, 24",
-    area: 96277,
+    area: 99055,
     imageUrl: "images/red_clifs.jpg"
   },
   {
