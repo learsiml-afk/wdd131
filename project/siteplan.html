@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan — Artemis Program</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #111; background: #fff; line-height: 1.7; }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 2px solid #e8690b; padding-bottom: 4px; margin-top: 2.5rem; color: #e8690b; }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.5rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+    .swatches { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .swatch { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+    .dot { width: 28px; height: 28px; border-radius: 4px; border: 1px solid #ccc; flex-shrink: 0; }
+    .wireframe { border: 1px solid #ccc; padding: 12px; font-size: 0.8rem; color: #555; margin-top: 10px; width: 240px; }
+    .wf-box { border: 1px dashed #aaa; padding: 6px; text-align: center; margin-bottom: 6px; background: #f9f9f9; }
+    .wf-row { display: flex; gap: 6px; margin-bottom: 6px; }
+    .wf-row .wf-box { flex: 1; }
+    .wireframes { display: flex; gap: 2rem; flex-wrap: wrap; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.85rem; color: #888; }
+  </style>
+</head>
+<body>
+
+<h1>Artemis: Return to the Moon</h1>
+<p class="meta">WDD 131 · W05 Site Plan · Israel · 2026</p>
+
+<h2>1. Site Name</h2>
+<p><strong>Artemis: Return to the Moon</strong> — named after NASA's active lunar program. The name is recognizable, meaningful (twin sister of Apollo in mythology), and immediately communicates the subject.</p>
+
+<h2>2. Site Purpose</h2>
+<p>An educational website that explains NASA's Artemis Program to a general audience — covering what it is, the hardware involved (SLS, Orion, Gateway, lunar lander), and the mission timeline from Artemis I through future crewed landings.</p>
+
+<h2>3. Scenarios</h2>
+<ul>
+  <li>What exactly is the Artemis Program and how is it different from Apollo?</li>
+  <li>What rocket and spacecraft will take astronauts to the Moon?</li>
+  <li>When is the first crewed lunar landing scheduled to happen?</li>
+  <li>Why are we going back to the Moon — what's the scientific reason?</li>
+</ul>
+
+<h2>4. Color Schema</h2>
+<div class="swatches">
+  <div class="swatch"><div class="dot" style="background:#0a0e1a;"></div> #0a0e1a — background</div>
+  <div class="swatch"><div class="dot" style="background:#111827;"></div> #111827 — cards / nav</div>
+  <div class="swatch"><div class="dot" style="background:#e8690b;"></div> #e8690b — primary accent (headings, CTAs)</div>
+  <div class="swatch"><div class="dot" style="background:#3b82f6;"></div> #3b82f6 — secondary accent (links)</div>
+  <div class="swatch"><div class="dot" style="background:#e2e8f0;"></div> #e2e8f0 — body text</div>
+  <div class="swatch"><div class="dot" style="background:#94a3b8;"></div> #94a3b8 — muted / captions</div>
+</div>
+
+<h2>5. Typography</h2>
+<ul>
+  <li><strong>Georgia (serif)</strong> — headings (H1, H2, H3). Authoritative, editorial feel.</li>
+  <li><strong>Palatino Linotype (serif)</strong> — body text. Warm and readable for longer content.</li>
+  <li><strong>Courier New (monospace)</strong> — UI labels, dates, mission codes. Evokes NASA mission control.</li>
+</ul>
+
+<h2>6. Wireframes</h2>
+<div class="wireframes">
+  <div>
+    <strong style="font-size:0.85rem;">Mobile</strong>
+    <div class="wireframe">
+      <div class="wf-box">NAV (☰ + Logo)</div>
+      <div class="wf-box" style="height:50px;">HERO — H1 + CTA</div>
+      <div class="wf-box">What is Artemis? (text)</div>
+      <div class="wf-box">Hardware Card × 4 (stacked)</div>
+      <div class="wf-box">Timeline (vertical)</div>
+      <div class="wf-box">Contact Form</div>
+      <div class="wf-box">FOOTER</div>
+    </div>
+  </div>
+  <div>
+    <strong style="font-size:0.85rem;">Desktop</strong>
+    <div class="wireframe">
+      <div class="wf-box">NAV — Logo · Home · Hardware · Timeline · Contact</div>
+      <div class="wf-box" style="height:60px;">HERO — full-width · H1 · tagline · CTA</div>
+      <div class="wf-row">
+        <div class="wf-box">What is Artemis? (text)</div>
+        <div class="wf-box">Moon image</div>
+      </div>
+      <div class="wf-row">
+        <div class="wf-box">SLS</div>
+        <div class="wf-box">Orion</div>
+        <div class="wf-box">Gateway</div>
+        <div class="wf-box">HLS</div>
+      </div>
+      <div class="wf-box">Timeline (vertical)</div>
+      <div class="wf-row">
+        <div class="wf-box">Contact info</div>
+        <div class="wf-box">Form</div>
+      </div>
+      <div class="wf-box">FOOTER</div>
+    </div>
+  </div>
+</div>
+
+<footer>Israel · WDD 131: Dynamic Web Fundamentals · BYU–Idaho via BYU Pathway · 2026</footer>
+
+</body>
+</html>
