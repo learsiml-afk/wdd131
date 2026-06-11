@@ -1,0 +1,122 @@
+/* siteplan.css */
+body {
+  font-family: Georgia, serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #111;
+  background: #fff;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 2px solid #e8690b;
+  padding-bottom: 4px;
+  margin-top: 2.5rem;
+  color: #e8690b;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.dot-bg       { background: #0a0e1a; }
+.dot-surface  { background: #111827; }
+.dot-accent   { background: #e8690b; }
+.dot-accent2  { background: #3b82f6; }
+.dot-text     { background: #e2e8f0; }
+.dot-muted    { background: #94a3b8; }
+
+.wireframes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.wireframe {
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 10px;
+  width: 240px;
+}
+
+.wireframe strong {
+  font-size: 0.85rem;
+}
+
+.wf-box {
+  border: 1px dashed #aaa;
+  padding: 6px;
+  text-align: center;
+  margin-bottom: 6px;
+  background: #f9f9f9;
+}
+
+.wf-hero {
+  height: 50px;
+}
+
+.wf-hero-lg {
+  height: 60px;
+}
+
+.wf-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.wf-row .wf-box {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #888;
+}
