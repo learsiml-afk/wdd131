@@ -10,7 +10,7 @@ const missions = [
     icon: '👨‍🚀',
     date: '2026',
     name: 'Artemis II',
-    status: 'active',
+    status: 'done',
     desc: 'First crewed Artemis flight. Four astronauts will fly around the Moon without landing — the first humans at lunar distance since Apollo 17 in 1972.'
   },
   {
