@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Artemis: Return to the Moon — NASA's program to send humans back to the lunar surface for the first time since 1972.">
+  <meta name="author" content="Israel">
+  <title>Artemis: Return to the Moon</title>
+  <link rel="stylesheet" href="styles/artemis.css">
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">🌕 <span>Artemis</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pages/hardware.html">Hardware</a></li>
+    <li><a href="pages/timeline.html">Timeline</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="pages/references.html">References</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="pages/hardware.html">Hardware</a>
+  <a href="pages/timeline.html">Timeline</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="pages/references.html">References</a>
+</div>
+
+<section class="hero">
+  <img src="images/hero-launch.jpg" alt="SLS rocket launching at night with a bright orange flame illuminating the launchpad" class="hero-img" loading="lazy">
+  <div class="hero-content container">
+    <span class="hero-badge">NASA Artemis Program · Active Mission</span>
+    <h1>Back to the <em>Moon.</em><br>Forward to Mars.</h1>
+    <p>For the first time in over 50 years, humanity is returning to the lunar surface — and this time, we're staying.</p>
+    <div class="btn-group">
+      <a href="pages/timeline.html" class="btn btn-primary">Explore Missions</a>
+      <a href="pages/hardware.html" class="btn btn-outline">View Hardware</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <span class="label">Overview</span>
+        <h2>What is the Artemis Program?</h2>
+        <p>Artemis is NASA's program to return humans to the Moon for the first time since Apollo 17 in 1972. Named after the twin sister of Apollo in Greek mythology, it will land the first woman and first person of color on the lunar surface.</p>
+        <p>This isn't just a repeat of Apollo. Artemis aims to build a sustainable presence on and around the Moon — using it as a stepping stone toward crewed missions to Mars.</p>
+        <div class="stats-grid">
+          <div class="stat-card fade-in">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Years since last Moon landing</div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Astronauts per crew</div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-number">322ft</div>
+            <div class="stat-label">Height of SLS rocket</div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-number">2026</div>
+            <div class="stat-label">Artemis II target year</div>
+          </div>
+        </div>
+      </div>
+      <img src="images/moon-surface.jpg" alt="Close-up of the lunar surface showing craters near the south pole" class="about-img" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="container">
+    <span class="label">Why it Matters</span>
+    <h2>The Moon is Just the Beginning</h2>
+    <p>The lunar south pole holds billions of tons of water ice — water that can be converted into rocket fuel, making deep space travel sustainable.</p>
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="icon">💧</div>
+        <h3>Water Ice</h3>
+        <p>Permanently shadowed craters near the south pole contain billions of tons of water ice — critical for producing fuel in space.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="icon">🔬</div>
+        <h3>Science</h3>
+        <p>The Moon is a 4.5-billion-year record of our solar system. South pole craters are pristine scientific time capsules.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="icon">🔴</div>
+        <h3>Path to Mars</h3>
+        <p>The Moon serves as a proving ground for life support, navigation, and operations needed for the 7-month journey to Mars.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <span class="label">Key Hardware</span>
+    <h2>The Machines That Will Get Us There</h2>
+    <p>Four systems work together to carry astronauts from Earth to the Moon's surface and back.</p>
+    <div id="hardware-grid" class="hw-grid"></div>
+    <div class="section-cta">
+      <a href="pages/hardware.html" class="btn btn-outline">Full Hardware Details →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <span class="label">Mission Timeline</span>
+    <h2>From Test Flight to Moon Base</h2>
+    <p>Five missions chart humanity's return to the lunar surface and the beginning of a permanent presence beyond Earth orbit.</p>
+    <div id="timeline-list" class="timeline"></div>
+    <div class="section-cta">
+      <a href="pages/timeline.html" class="btn btn-outline">Full Timeline →</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="label">Stay Updated</span>
+        <h2>Track the Mission</h2>
+        <p>The Artemis Program is unfolding right now. Sign up to stay informed about launches, crew announcements, and mission milestones.</p>
+        <div class="counter-box">
+          <div class="counter-label">Community Subscribers</div>
+          <div class="counter-number"><span id="sub-count">0</span> explorers</div>
+        </div>
+      </div>
+      <div class="form-box">
+        <h3>Join the Mission</h3>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="interest">Primary Interest</label>
+            <select id="interest" name="interest">
+              <option value="general">General Space Enthusiast</option>
+              <option value="engineering">Engineering and Technology</option>
+              <option value="science">Lunar Science</option>
+              <option value="education">Educational Content</option>
+              <option value="career">Aerospace Career Path</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Comment (optional)</label>
+            <textarea id="message" name="message" placeholder="What interests you most about Artemis?"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Launch My Subscription 🚀</button>
+        </form>
+        <div class="form-success" id="form-success"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>🌕 Artemis: Return to the Moon</strong>
+        <p>An educational resource about NASA's Artemis Program — humanity's next chapter in space exploration.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/hardware.html">Hardware</a></li>
+          <li><a href="pages/timeline.html">Timeline</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.nasa.gov/artemis" target="_blank" rel="noopener">NASA Artemis</a></li>
+          <li><a href="pages/references.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Artemis: Return to the Moon · WDD 131 · Israel · BYU–Idaho</p>
+      <p><a href="pages/references.html">References</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
