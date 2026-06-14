@@ -707,3 +707,8 @@ footer {
     text-align: center;
   }
 }
+.why-card.fade-in,
+.stat-card.fade-in {
+  opacity: 1;
+  transform: none;
+}
