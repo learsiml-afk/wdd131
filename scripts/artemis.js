@@ -83,7 +83,7 @@ function renderHardware() {
   if (!grid) return;
 
   grid.innerHTML = hardware.map(hw => `
-    <div class="hw-card fade-in">
+    <div class="hw-card">
       <span class="icon">${hw.icon}</span>
       <div class="tag">${hw.tag}</div>
       <h3>${hw.name}</h3>
@@ -109,7 +109,7 @@ function renderTimeline() {
   list.innerHTML = missions.map(m => {
     const [cls, label] = badgeMap[m.status];
     return `
-      <div class="tl-item fade-in">
+      <div class="tl-item">
         <div class="tl-dot">${m.icon}</div>
         <div class="tl-card">
           <div class="tl-date">${m.date}</div>
@@ -188,14 +188,7 @@ function initForm() {
 
 
 function initFadeIn() {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
-
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  document.querySelectorAll('.fade-in').forEach(el => {
+    el.classList.add('visible');
+  });
 }
